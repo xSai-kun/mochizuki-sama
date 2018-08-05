@@ -98,7 +98,7 @@ if (message.content === "/Chute"){
         console.log('Le bot tombe dans les escaliers');
 }
 
-if (message.content === "/Gateau"){
+if (message.content === "/Gâteau"){
    message.reply("**Break a chipé les gâteaux de Lou et les cookies de Lookie !**");
         console.log('Le bot vole les gâteaux');
 }
