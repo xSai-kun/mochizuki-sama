@@ -35,6 +35,7 @@ client.on('message', message => {
         .addField("/Gâteau", "Je vous réponds !")
         .addField("/Sheryl", "Je vous réponds !")
         .addField("/Cookies", "Je vous réponds !")
+        .addField("/Han", "Je vous réponds !")
         .setFooter ("Menu d'aide -  Mochizuki-Sama")
         message.channel.sendMessage(help_embed);
         console.log("Un utilisateur a affiché les commandes du bot")
@@ -70,6 +71,11 @@ if (message.content === "/Peluche"){
 if (message.content === "/Lacie"){
     message.reply("Un peu de musique ? https://www.youtube.com/watch?v=PBiqMzyGJJk");
         console.log('Le bot envoie la chanson de Lacie');
+}
+
+if (message.content === "/Han"){
+    message.reply("https://pm1.narvii.com/6174/95beca04c73ceb8f13ca855db56e70a75c436621_hq.jpg");
+        console.log('Le bot traumatise tout le monde');
 }
     
 if (message.content === "/Caramel"){
