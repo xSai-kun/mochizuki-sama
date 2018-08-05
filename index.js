@@ -33,6 +33,8 @@ client.on('message', message => {
         .addField("/Baiser", "Je vous réponds !")
         .addField("/Chute", "Je vous réponds !")
         .addField("/Gâteau", "Je vous réponds !")
+        .addField("/Sheryl", "Je vous réponds !")
+        .addField("/Cookies", "Je vous réponds !")
         .setFooter ("Menu d'aide -  Mochizuki-Sama")
         message.channel.sendMessage(help_embed);
         console.log("Un utilisateur a affiché les commandes du bot")
@@ -101,6 +103,16 @@ if (message.content === "/Chute"){
 if (message.content === "/Gâteau"){
    message.reply("**Break a chipé les gâteaux de Lou et les cookies de Lookie !**");
         console.log('Le bot vole les gâteaux');
+}
+    
+if (message.content === "/Cookies"){
+   message.reply("**Verity et Lookie volent les cookies avant de disparaitre comme des ninjas ! :cookie: :cookie: :cookie:**");
+        console.log('Le bot vole les gâteaux');
+}
+    
+if (message.content === "/Sheryl"){
+   message.reply("**Rufus fait une énième demande en mariage :rose: :ring: :rose:**");
+        console.log('Le bot fait une demande en mariage');
 }
     
 if (message.content === "/Thé"){
