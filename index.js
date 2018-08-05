@@ -27,6 +27,12 @@ client.on('message', message => {
         .addField("/Peluche", "Je vous réponds !")
         .addField("/Thé", "Je vous réponds !")
         .addField("/Lacie", "Je vous réponds !")
+        .addField("/Caramel", "Je vous réponds !")
+        .addField("/Indécent", "Je vous réponds !")
+        .addField("/Break", "Je vous réponds !")
+        .addField("/Baiser", "Je vous réponds !")
+        .addField("/Chute", "Je vous réponds !")
+        .addField("/Gâteau", "Je vous réponds !")
         .setFooter ("Menu d'aide -  Mochizuki-Sama")
         message.channel.sendMessage(help_embed);
         console.log("Un utilisateur a affiché les commandes du bot")
@@ -63,7 +69,40 @@ if (message.content === "/Lacie"){
     message.reply("Un peu de musique ? https://www.youtube.com/watch?v=PBiqMzyGJJk");
         console.log('Le bot envoie la chanson de Lacie');
 }
+    
+if (message.content === "/Caramel"){
+    
+    message.reply("**Léonor prend la fuite !!!**");
+console.log('Le bot prend la fuite');
+}
+    
+if (message.content === "/Indécent"){
+    
+    message.reply("**Emile tombe dans les pommes**");
+console.log('Le bot tombe dans les pommes');
+}
+    
+if (message.content === "/Break"){
+    
+    message.reply("**Verity fait sa tsundere !**");
+console.log('Le bot fait sa tsundere');
+}
 
+if (message.content === "/Baiser"){
+   message.reply("**Willem embrasse tout le monde !**");
+        console.log('Le bot embrasse tout le monde');
+}
+    
+if (message.content === "/Chute"){
+   message.reply("Lou a encore dévalé les escaliers...");
+        console.log('Le bot tombe dans les escaliers');
+}
+
+if (message.content === "/Gateau"){
+   message.reply("**Break a chipé les gâteaux de Lou et les cookies de Lookie !**");
+        console.log('Le bot vole les gâteaux');
+}
+    
 if (message.content === "/Thé"){
    message.reply("It's Tea Time ! ");
         console.log('Le bot sert le thé');
