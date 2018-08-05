@@ -23,8 +23,8 @@ client.on('message', message => {
         .addField("/Bonjour", "Je vous réponds !")
         .addField("/Chat", "Je vous réponds !")
         .addField("/Amour", "Je vous réponds !")
-        .addField("Poupée", "Je vous réponds !")
-        .addField("Peluche", "Je vous réponds !")
+        .addField("/Poupée", "Je vous réponds !")
+        .addField("/Peluche", "Je vous réponds !")
         .addField("/Thé", "Je vous réponds !")
         .setFooter ("Menu d'aide -  Mochizuki-Sama")
         message.channel.sendMessage(help_embed);
@@ -38,22 +38,22 @@ client.on('message', message => {
 
   if (message.content === "/Chat"){
    
-     message.reply(" **lance un chat sur Gilbert** :chat: :chat: :chat: ");
+     message.reply(" **lance un chat sur Gilbert** :cat: :cat: :cat: ");
         console.log('Le bot lance un chat');
 }
 
 if (message.content === "/Amour"){
     
-    message.reply("Miss Sharon devient fleur bleue ! :han: :han: ");
+    message.reply("Miss Sharon devient fleur bleue ! :heart: :heart: ");
 console.log('Le bot devient fleur bleu');
 }
 
-if (message.content === "Poupée"){
-    message.reply(" **clac clac clac** :hey: :hey: ");
+if (message.content === "/Poupée"){
+    message.reply(" **clac clac clac** ");
 console.log('Le bot fait le bruit de Emily');
 }
 
-if (message.content === "Peluche"){
+if (message.content === "/Peluche"){
     message.reply("**déchire une peluche**");
         console.log('Le bot déchire une peluche');
 }
