@@ -26,6 +26,7 @@ client.on('message', message => {
         .addField("/Poupée", "Je vous réponds !")
         .addField("/Peluche", "Je vous réponds !")
         .addField("/Thé", "Je vous réponds !")
+        .addField("/Lacie", "Je vous réponds !")
         .setFooter ("Menu d'aide -  Mochizuki-Sama")
         message.channel.sendMessage(help_embed);
         console.log("Un utilisateur a affiché les commandes du bot")
@@ -56,6 +57,11 @@ console.log('Le bot fait le bruit de Emily');
 if (message.content === "/Peluche"){
     message.reply("**déchire une peluche**");
         console.log('Le bot déchire une peluche');
+}
+    
+if (message.content === "/Lacie"){
+    message.reply("Un peu de musique ? https://www.youtube.com/watch?v=PBiqMzyGJJk");
+        console.log('Le bot envoie la chanson de Lacie');
 }
 
 if (message.content === "/Thé"){
