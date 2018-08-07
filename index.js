@@ -35,6 +35,7 @@ client.on('message', message => {
         .addField("/Gâteau", "Je vous réponds !")
         .addField("/Sheryl", "Je vous réponds !")
         .addField("/Cookies", "Je vous réponds !")
+        .addField("/Famille", "Je vous réponds !")
         .addField("/Han", "Je vous réponds !")
         .setFooter ("Menu d'aide -  Mochizuki-Sama")
         message.channel.sendMessage(help_embed);
@@ -65,6 +66,11 @@ console.log('Le bot fait le bruit de Emily');
 
 if (message.content === "/Peluche"){
     message.reply("**déchire une peluche**");
+        console.log('Le bot déchire une peluche');
+}
+    
+if (message.content === "/Famille"){
+    message.reply("**La fratrie de Léonor vous écrase subitement !**");
         console.log('Le bot déchire une peluche');
 }
     
