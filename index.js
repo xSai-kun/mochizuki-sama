@@ -30,7 +30,7 @@ client.on('message', message => {
         .addField("/Caramel", "Je vous réponds !")
         .addField("/Indécent", "Je vous réponds !")
         .addField("/Break", "Je vous réponds !")
-        .addField("/Baiser", "Je vous réponds !")
+        .addField("/Cochon", "Je vous réponds !")
         .addField("/Chute", "Je vous réponds !")
         .addField("/Gâteau", "Je vous réponds !")
         .addField("/Sheryl", "Je vous réponds !")
@@ -102,9 +102,14 @@ if (message.content === "/Break"){
 console.log('Le bot fait sa tsundere');
 }
 
-if (message.content === "/Baiser"){
-   message.reply("**Willem embrasse tout le monde !**");
-        console.log('Le bot embrasse tout le monde');
+if (message.content === "/Cochon"){
+   message.reply("**:pig: N'est-il pas trop mignon ? :pig:**");
+        console.log('Le bot aime les cochons');
+}
+
+if (message.content === "/Plante"){
+   message.reply("**:seedling: Vénérez le Dieu Plante Verte ! :seedling:**");
+        console.log('Le bot aime les cochons');
 }
     
 if (message.content === "/Chute"){
