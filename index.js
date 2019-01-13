@@ -148,48 +148,48 @@ if (message.content === "/Thé"){
 
 if (message.content === "Mochizuki-Sama, que sais-tu des OCs ?"){ random();
 
-if (randnum == 1){
-message.reply("Léonor fait craquer les filles mais se prend *beaucoup* de râteaux.. :eyes:");
-console.log(randnum);
+   if (randnum == 1){
+   message.reply("Léonor fait craquer les filles mais se prend *beaucoup* de râteaux.. :eyes:");
+   console.log(randnum);
 }
 
-if (randnum == 2){
-message.reply("Emile est toujours à la recherche du prince charmant :rose: :rose:");
-console.log(randnum);
+   if (randnum == 2){
+   message.reply("Emile est toujours à la recherche du prince charmant :rose: :rose:");
+   console.log(randnum);
 }
 
-if (randnum == 3){
-message.reply("Andrew était le Dieu d'un culte.");
-console.log(randnum);
+   if (randnum == 3){
+   message.reply("Andrew était le Dieu d'un culte.");
+   console.log(randnum);
 }
 
-if (randnum == 4{
-message.reply("Lou vénère Rufus Barma.");
-console.log(randnum);
+   if (randnum == 4{
+   message.reply("Lou vénère Rufus Barma.");
+   console.log(randnum);
 }
 
 }
 
 if (message.content === "Mochizuki-Sama, que sais-tu des Chains ?"){ random();
 
-if (randnum == 1){
-message.reply("Inconsciemment, Malice cherche *La Fille*.");
-console.log(randnum);
+   if (randnum == 1){
+   message.reply("Inconsciemment, Malice cherche *La Fille*.");
+   console.log(randnum);
 }
 
-if (randnum == 2){
-message.reply("Si tu ne respectes pas Arietes, il te donnera un grand coup de bois.");
-console.log(randnum);
+   if (randnum == 2){
+   message.reply("Si tu ne respectes pas Arietes, il te donnera un grand coup de bois.");
+   console.log(randnum);
 }
 
-if (randnum == 3){
-message.reply("Malice a emmerdé Puppets par le passé et maintenant, Puppets veut le tuer.");
-console.log(randnum);
+   if (randnum == 3){
+   message.reply("Malice a emmerdé Puppets par le passé et maintenant, Puppets veut le tuer.");
+   console.log(randnum);
 }
 
-if (randnum == 4{
-message.reply("Verity est folle de cookies.");
-console.log(randnum);
+   if (randnum == 4{
+   message.reply("Verity est folle de cookies.");
+   console.log(randnum);
 }
 
 }
