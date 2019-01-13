@@ -31,6 +31,8 @@ client.on('message', message => {
         .addField("/Indécent", "Je vous réponds !")
         .addField("/Break", "Je vous réponds !")
         .addField("/Cochon", "Je vous réponds !")
+        .addField("/Athanase", "Je vous réponds !")
+        .addField("/Plante", "Je vous réponds !")
         .addField("/Chute", "Je vous réponds !")
         .addField("/Gâteau", "Je vous réponds !")
         .addField("/Sheryl", "Je vous réponds !")
@@ -62,6 +64,11 @@ console.log('Le bot devient fleur bleu');
 if (message.content === "/Poupée"){
     message.reply(" **clac clac clac** ");
 console.log('Le bot fait le bruit de Emily');
+}
+    
+if (message.content === "/Athanase"){
+    message.reply("Emile est encore tout cassé et Verity fait encore sa gamine. COURAGE ATHANASE !");
+console.log('Le bot encourage Athanase');
 }
 
 if (message.content === "/Peluche"){
@@ -103,12 +110,12 @@ console.log('Le bot fait sa tsundere');
 }
 
 if (message.content === "/Cochon"){
-   message.reply("**:pig: N'est-il pas trop mignon ? :pig:**");
+   message.reply(":pig: N'est-il pas trop mignon ? :pig:");
         console.log('Le bot aime les cochons');
 }
 
 if (message.content === "/Plante"){
-   message.reply("**:seedling: Vénérez le Dieu Plante Verte ! :seedling:**");
+   message.reply(":seedling: Vénérez le Dieu Plante Verte ! :seedling:");
         console.log('Le bot aime les cochons');
 }
     
