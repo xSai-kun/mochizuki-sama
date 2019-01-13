@@ -10,6 +10,7 @@ client.login(process.env.TOKEN);
 client.on("ready", () => {
     console.log("Je suis prêt !")
     client.user.setGame("dessiner des mangas")
+    client.user.setGame("envoyer des gens dans l'Abyss")
 });
 
 client.on('message', message => {
@@ -18,7 +19,7 @@ client.on('message', message => {
         var help_embed = new Discord.RichEmbed()
         .setColor("#0099FF")
         .setTitle("Voici mes commandes d'aide")
-        .setDescription("Je suis Mochizuki-Sama, votre Bot !")
+         .setDescription("Je suis Mochizuki-Sama, votre Bot !")
         .addField("/Aide", "Affiche mes commandes")
         .addField("/Bonjour", "Je vous réponds !")
         .addField("/Chat", "Je vous réponds !")
@@ -46,22 +47,71 @@ client.on('message', message => {
         console.log("Un utilisateur a affiché les commandes du bot")
     }
 
-    if (message.content === "/Bonjour"){
+     if (message.content === "/Bonjour"){
         message.reply("Bonjour !");
     console.log('Le bot dit bonjour');
   }
 
   if (message.content === "/Chat"){
-   
      message.reply(" **lance un chat sur Gilbert** :cat: :cat: :cat: ");
         console.log('Le bot lance un chat');
 }
 
 if (message.content === "/Amour"){
-    
     message.reply("Miss Sharon devient fleur bleue ! :heart: :heart: ");
 console.log('Le bot devient fleur bleu');
 }
+
+  if (message.content === "Mochizuki-Sama, que sais-tu des OCs ?"){
+   random();
+   
+    if (randnum == 1){
+       message.reply("Léonor fait craquer les filles mais se prend beaucoup de râteaux.. :eyes:");
+       console.log(randnum);
+    }
+
+    if (randnum == 2){
+        message.reply("Emile est toujours à la recherche du prince charmant :rose: :rose:");
+        console.log(randnum);
+    }
+
+    if (randnum == 3){
+        message.reply("Andrew était le Dieu d'un culte.");
+        console.log(randnum);
+    }
+
+    if (randnum == 4){
+        message.reply("Lou vénère Rufus Barma");
+        console.log(randnum);
+    }
+
+}
+
+if (message.content === "Mochizuki-Sama, que sais-tu des Chains ?"){
+   random();
+   
+    if (randnum == 1){
+       message.reply("Inconsciemment, Malice cherche La Fille");
+       console.log(randnum);
+    }
+
+    if (randnum == 2){
+        message.reply("Si tu ne respectes pas Arietes, il te donnera un grand coup de bois.");
+        console.log(randnum);
+    }
+
+    if (randnum == 3){
+        message.reply("Malice a emmerdé Puppets par le passé et maintenant, Puppets veut le tuer.");
+        console.log(randnum);
+    }
+
+    if (randnum == 4){
+        message.reply("Verity est folle de cookies.");
+        console.log(randnum);
+    }
+
+}
+    
 
 if (message.content === "/Poupée"){
     message.reply(" **clac clac clac** ");
@@ -80,7 +130,7 @@ if (message.content === "/Peluche"){
     
 if (message.content === "/Famille"){
     message.reply("**La fratrie de Léonor vous écrase subitement !**");
-        console.log('Le bot déchire une peluche');
+        console.log('Le bot lâche la fratrie de Léonor');
 }
     
 if (message.content === "/Lacie"){
@@ -94,19 +144,16 @@ if (message.content === "/Han"){
 }
     
 if (message.content === "/Caramel"){
-    
     message.reply("**Léonor prend la fuite !!!**");
 console.log('Le bot prend la fuite');
 }
     
 if (message.content === "/Indécent"){
-    
     message.reply("**Emile tombe dans les pommes**");
 console.log('Le bot tombe dans les pommes');
 }
     
-if (message.content === "/Break"){
-    
+if (message.content === "/Break"){   
     message.reply("**Verity fait sa tsundere !**");
 console.log('Le bot fait sa tsundere');
 }
@@ -118,7 +165,7 @@ if (message.content === "/Cochon"){
 
 if (message.content === "/Plante"){
    message.reply(":seedling: Vénérez le Dieu Plante Verte ! :seedling:");
-        console.log('Le bot aime les cochons');
+        console.log('Le bot vénère Sai');
 }
     
 if (message.content === "/Chute"){
@@ -147,3 +194,17 @@ if (message.content === "/Thé"){
 }
 
 });
+
+function random(min, max) {
+    min = Math.ceil(0);
+    max = Math.floor(6);
+    randnum = Math.floor(Math.random() * (max - min +1) + min);
+}
+
+client.on("guildMemberAdd", member => {
+    member.guild.channels.find("name", "général").send(`Un nouvel arrivant est sorti des Abyss ! Prends une tasse de thé ${member.user.username} et quelques biscuits !)
+})
+
+client.on("guildMemberRemove", member => {
+    member.guild.channels.find("name", "général").send(`${member.user.username} a fini son contract illégal et est reparti dans les Abyss !`)
+})
