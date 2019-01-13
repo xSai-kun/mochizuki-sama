@@ -196,9 +196,9 @@ function random(min, max) {
 }
 
 client.on("guildMemberAdd", member => {
-    member.guild.channels.find("name", "flood").send(`:sunflower: ${member.user.username} vient de débarquer dans la forêt ! La bienvenue à toi, en espérant que tu te plaise ici ! :sunflower:`)
+    member.guild.channels.find("name", "général").send(`Un nouvel arrivant est sorti des Abyss ! Prends une tasse de thé  ${member.user.username} et quelques biscuits !`)
 })
 
 client.on("guildMemberRemove", member => {
-    member.guild.channels.find("name", "flood").send(`:sunflower: ${member.user.username} a quitté la forêt ! Snifou snifou T^T :sunflower:`)
+    member.guild.channels.find("name", "général").send(`${member.user.username} a fini son contract illégal et est reparti dans les Abyss !`)
 })
