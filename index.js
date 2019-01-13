@@ -46,46 +46,36 @@ client.on('message', message => {
         console.log("Un utilisateur a affiché les commandes du bot")
     }
 
-    if (message.content === "Salut Fawn"){
-        message.reply("Je suis le cousin de Bambi ! :D");
+    if (message.content === "/Bonjour"){
+        message.reply("Bonjour !");
     console.log('Le bot dit bonjour');
   }
       
-  if (message.content === "Un cookie Fawn !"){
-        message.reply("Voilà pour toi :cookie: :cookie: :cookie:");
-    console.log('Le bot donne un cookie');
+  if (message.content === "/Chat"){
+        message.reply("**lance un chat sur Gilbert** :cat: :cat: :cat:");
+    console.log('Le bot lance un chat');
   }
 
-  if (message.content === "Apprends moi quelque chose Fawn"){
+  if (message.content === "Mochizuki-sama, que savez-vous sur les OCs ?"){
    random();
    
     if (randnum == 1){
-       message.reply("Les bois des rennes mâles tombent en hiver, mais pas ceux des femelles. Rudolphe est une femme.");
+       message.reply("Léonor fait craquer les filles mais se prend beaucoup de râteaux.. :eyes:");
        console.log(randnum);
     }
 
     if (randnum == 2){
-        message.reply("Les autruches ne sont pas des oiseaux mais des reptiles.");
+        message.reply("Emile est toujours à la recherche du prince charmant :rose: :rose:");
         console.log(randnum);
     }
 
     if (randnum == 3){
-        message.reply("En Israël, il est interdit d'emmener un ours à la plage.");
+        message.reply("Andrew était le Dieu d'un culte.");
         console.log(randnum);
     }
 
     if (randnum == 4){
-        message.reply("Les femelles hyènes ont un « pénis » et accouchent par là.");
-        console.log(randnum);
-    }
-
-    if (randnum == 5){
-        message.reply("En Alaska, murmurer dans l'oreille de quelqu'un qui chasse l'élan est _illégal_.");
-        console.log(randnum);
-    }
-
-    if (randnum == 6){
-        message.reply("Les chiens sont aussi intelligents qu'un enfant de 3 ans.");
+        message.reply("Lou vénère Rufus Barma.");
         console.log(randnum);
     }
 
@@ -227,23 +217,13 @@ if (message.content === "Fawn, tu connais Osomatsu-san ?"){
         console.log(randnum);
     }
 
-    if (randnum == 5){
-        message.reply("https://media.giphy.com/media/dYG3u7RgPcHMA/giphy.gif");
-        console.log(randnum);
-    }
-
-    if (randnum == 6){
-        message.reply("https://media.giphy.com/media/z66qw5voTbWrS/giphy.gif");
-        console.log(randnum);
-    }
-
 }
 
 });
 
 function random(min, max) {
     min = Math.ceil(0);
-    max = Math.floor(6);
+    max = Math.floor(4);
     randnum = Math.floor(Math.random() * (max - min +1) + min);
 }
 
