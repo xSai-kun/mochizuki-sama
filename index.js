@@ -197,7 +197,7 @@ if (message.content === "/Thé"){
 
 function random(min, max) {
     min = Math.ceil(0);
-    max = Math.floor(6);
+    max = Math.floor(4);
     randnum = Math.floor(Math.random() * (max - min +1) + min);
 }
 
