@@ -208,3 +208,5 @@ client.on("guildMemberAdd", member => {
 client.on("guildMemberRemove", member => {
     member.guild.channels.find("name", "général").send(`${member.user.username} a fini son contract illégal et est reparti dans les Abyss !`)
 })
+
+});
