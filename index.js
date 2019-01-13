@@ -39,8 +39,8 @@ client.on('message', message => {
         .addField("/Cookies", "Je vous réponds !")
         .addField("/Famille", "Je vous réponds !")
         .addField("/Han", "Je vous réponds !")
-        .addField("Mochizuki-Sama, que sais-tu des OCs ?", "Je vous réponds !")
-        .addField("Mochizuki-Sama, que sais-tu des Chains ?", "Je vous réponds !")
+        .addField("Mochizuki-sama, que savez-vous sur les OCs ?", "Je vous réponds !")
+        .addField("Mochizuki-sama, que savez-vous sur les Chains ?", "Je vous réponds !")
         .setFooter ("Menu d'aide -  Mochizuki-Sama")
         message.channel.sendMessage(help_embed);
         console.log("Un utilisateur a affiché les commandes du bot")
@@ -81,142 +81,110 @@ client.on('message', message => {
 
 }
 
-if (message.content === "Raconte moi une anecdote Fawn"){
+if (message.content === "Mochizuki-sama, que savez-vous sur les Chains ?"){
    random();
    
     if (randnum == 1){
-       message.reply("Les concombres de mer respirent par l'anus.");
+       message.reply("Inconsciemment, Malice cherche La Fille.");
        console.log(randnum);
     }
 
     if (randnum == 2){
-        message.reply("Une autruche (mâle) peut rugir comme un lion.");
+        message.reply("Si tu ne respectes pas Arietes, il te donnera un grand coup de bois.");
         console.log(randnum);
     }
 
     if (randnum == 3){
-        message.reply("Les chauves-souris sont les seuls mammifères capable de voler.");
+        message.reply("Malice a emmerdé Puppets par le passé et maintenant, Puppets veut le tuer.");
         console.log(randnum);
     }
 
     if (randnum == 4){
-        message.reply("Une dent d'éléphant peut peser à elle toute seule 4kg.");
-        console.log(randnum);
-    }
-
-    if (randnum == 5){
-        message.reply("En 1924, à South Bend (Indiana, USA) à été condamné pour le crime de fumer une cigarette et à reçu une amende de 25 dollars.");
-        console.log(randnum);
-    }
-
-    if (randnum == 6){
-        message.reply("Parmis les survivants du Titanic, on trouve deux chiens.");
+        message.reply("Verity est folle de cookies.");
         console.log(randnum);
     }
 
 }
     
 
-if (message.content === "C'est pas mauvais du steack de Fawn"){
-    message.reply("Mangez la maman de Bambi elle est plus dodue que moi !");
-console.log('Le bot essaye de sauver sa peau');
+if (message.content === "/Poupée"){
+    message.reply(" **clac clac clac** ");
+console.log('Le bot fait le bruit de Emily');
 }
 
-if (message.content === "Je me sens inutile Fawn"){
-    random();
-   
-    if (randnum == 1){
-       message.reply("Souviens toi que l'armée de Caligula s'est battue _contre la mer_.");
-       console.log(randnum);
-    }
-
-    if (randnum == 2){
-        message.reply("Même le crayon blanc est d'une grande importance.");
-        console.log(randnum);
-    }
-
-    if (randnum == 3){
-        message.reply("Et Verlaine a tiré sur Rimbaud par possessivité.");
-        console.log(randnum);
-    }
-
-    if (randnum == 4){
-        message.reply("Souviens toi que Van Gogh s'est coupé une oreille et buvait de la peinture.");
-        console.log(randnum);
-    }
-
-    if (randnum == 5){
-        message.reply("Anatoniquement parlant, un bourdon est incapable de voler. Pourtant, ça l'empêche pas de très bien y arriver.");
-        console.log(randnum);
-
-    }
-    if (randnum == 6){
-        message.reply("N'empêche, c'est toi le spermatozoïde qu'à gagné la course.");
-        console.log(randnum);
-    }
-
+if (message.content === "/Athanase"){
+    message.reply("Emile est encore tout cassé et Verity fait encore sa gamine. COURAGE ATHANASE !");
+console.log('Le bot encourage Athanase');
 }
 
-if (message.content === "Fawn, musique !"){
+if (message.content === "/Peluche"){
+    message.reply("**déchire une peluche**");
+        console.log('Le bot déchire une peluche');
+}
     
-    random();
-   
-    if (randnum == 1){
-       message.reply("https://www.youtube.com/watch?v=qm_BZ0LlacA");
-       console.log(randnum);
-    }
-
-    if (randnum == 2){
-        message.reply("https://www.youtube.com/watch?v=0BEVidIfBYg");
-        console.log(randnum);
-    }
-
-    if (randnum == 3){
-        message.reply("https://www.youtube.com/watch?v=KMTRqAgLw04");
-        console.log(randnum);
-    }
-
-    if (randnum == 4){
-        message.reply("https://www.youtube.com/watch?v=lHKuPOlq9c8");
-        console.log(randnum);
-    }
-
-    if (randnum == 5){
-        message.reply("https://www.youtube.com/watch?v=xsw3ldAjHlQ");
-        console.log(randnum);
-    }
-
-    if (randnum == 6){
-        message.reply("https://www.youtube.com/watch?v=DBXaKjMsTbI");
-        console.log(randnum);
-    }
-
+if (message.content === "/Famille"){
+    message.reply("**La fratrie de Léonor vous écrase subitement !**");
+        console.log('Le bot lâche la fratrie de Léonor');
+}
+    
+if (message.content === "/Lacie"){
+    message.reply("Un peu de musique ? https://www.youtube.com/watch?v=PBiqMzyGJJk");
+        console.log('Le bot envoie la chanson de Lacie');
 }
 
-if (message.content === "Fawn, tu connais Osomatsu-san ?"){
+if (message.content === "/Han"){
+    message.reply("https://pm1.narvii.com/6174/95beca04c73ceb8f13ca855db56e70a75c436621_hq.jpg");
+        console.log('Le bot traumatise tout le monde');
+}
     
-    random();
-   
-    if (randnum == 1){
-       message.reply("https://media.giphy.com/media/HcCb4FwzQvxxm/giphy.gif");
-       console.log(randnum);
-    }
+if (message.content === "/Caramel"){
+    message.reply("**Léonor prend la fuite !!!**");
+console.log('Le bot prend la fuite');
+}
+    
+if (message.content === "/Indécent"){
+    message.reply("**Emile tombe dans les pommes**");
+console.log('Le bot tombe dans les pommes');
+}
+    
+if (message.content === "/Break"){   
+    message.reply("**Verity fait sa tsundere !**");
+console.log('Le bot fait sa tsundere');
+}
 
-    if (randnum == 2){
-        message.reply("https://media.giphy.com/media/zJ9yNd6jDbj8c/giphy.gif");
-        console.log(randnum);
-    }
+if (message.content === "/Cochon"){
+   message.reply(":pig: N'est-il pas trop mignon ? :pig:");
+        console.log('Le bot aime les cochons');
+}
 
-    if (randnum == 3){
-        message.reply("https://media.giphy.com/media/RR13ZhCGd8lm8/giphy.gif");
-        console.log(randnum);
-    }
+if (message.content === "/Plante"){
+   message.reply(":seedling: Vénérez le Dieu Plante Verte ! :seedling:");
+        console.log('Le bot vénère Sai');
+}
+    
+if (message.content === "/Chute"){
+   message.reply("Lou a encore dévalé les escaliers...");
+        console.log('Le bot tombe dans les escaliers');
+}
 
-    if (randnum == 4){
-        message.reply("https://media.giphy.com/media/IKZtzUwaf57dS/giphy.gif");
-        console.log(randnum);
-    }
-
+if (message.content === "/Gâteau"){
+   message.reply("**Break a chipé les gâteaux de Lou et les cookies de Lookie !**");
+        console.log('Le bot vole les gâteaux');
+}
+    
+if (message.content === "/Cookies"){
+   message.reply("**Verity et Lookie volent les cookies avant de disparaitre comme des ninjas ! :cookie: :cookie: :cookie:**");
+        console.log('Le bot vole les gâteaux');
+}
+    
+if (message.content === "/Sheryl"){
+   message.reply("**Rufus fait une énième demande en mariage :rose: :ring: :rose:**");
+        console.log('Le bot fait une demande en mariage');
+}
+    
+if (message.content === "/Thé"){
+   message.reply("It's Tea Time ! ");
+        console.log('Le bot sert le thé');
 }
 
 });
