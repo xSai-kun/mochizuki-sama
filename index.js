@@ -37,6 +37,7 @@ client.on('message', message => {
         .addField("/Gâteau", "Je vous réponds !")
         .addField("/Sheryl", "Je vous réponds !")
         .addField("/Cookies", "Je vous réponds !")
+        .addField("/Câlin [Nom d'OC]", "Je vous réponds !")
         .addField("/Famille", "Je vous réponds !")
         .addField("/Han", "Je vous réponds !")
         .addField("Mochizuki-sama, que savez-vous sur les OCs ?", "Je vous réponds !")
@@ -56,6 +57,81 @@ client.on('message', message => {
     console.log('Le bot lance un chat');
   }
 
+  if (message.content === "/Dossier"){
+        message.reply("Oups, Andrew a encore oublié un dossier important :facepalm:");
+    console.log('Le bot perd un dossier');
+  }
+  
+  if (message.content === "/Câlin Athanase"){
+        message.reply("Athanase te demande ce que tu fous. Il n'a pas l'air d'apprécier ton câlin...");
+    console.log('Le bot fait un câlin.');
+  }
+    
+  if (message.content === "/Câlin Emile"){
+        message.reply("Emile se fige. Cours. Vite.");
+    console.log('Le bot fait un câlin.');
+  }
+  
+  if (message.content === "/Câlin Malice"){
+        message.reply("Malice ricane de joie.");
+    console.log('Le bot fait un câlin.');
+  }
+    
+  if (message.content === "/Câlin Puppets"){
+        message.reply("Puppets se paralyse.");
+    console.log('Le bot fait un câlin.');
+  }
+  
+  if (message.content === "/Câlin Verity"){
+        message.reply("Verity essaye de se dégager de ton étreinte ! @A@");
+    console.log('Le bot fait un câlin.');
+  }
+    
+   if (message.content === "/Câlin Lookie"){
+        message.reply("Lookie te demande un cookie en échange.");
+    console.log('Le bot fait un câlin.');
+  }
+    
+  if (message.content === "/Câlin James"){
+        message.reply("James semble ravi ! :D");
+    console.log('Le bot fait un câlin.');
+  }
+  
+  if (message.content === "/Câlin Reika"){
+        message.reply("Reika meurt de gêne x///x");
+    console.log('Le bot fait un câlin.');
+  }
+    
+  if (message.content === "/Câlin Dementia"){
+        message.reply("Dementia reste figée avant de reculer un peu.");
+    console.log('Le bot fait un câlin.');
+  }
+  
+  if (message.content === "/Câlin Absentia"){
+        message.reply("Absentia reste pétrifiée. Elle a l'air de se demander ce qui lui arrive.");
+    console.log('Le bot fait un câlin.');
+  }
+    
+   if (message.content === "/Câlin Andrew"){
+        message.reply("Andrew bugue avant de te rendre ton câlin ! \o/");
+    console.log('Le bot fait un câlin.');
+  }
+  
+  if (message.content === "/Câlin Léonor"){
+        message.reply("Léonor est étonné mais semble bien le prendre ! :D");
+    console.log('Le bot fait un câlin.');
+  }
+    
+  if (message.content === "/Câlin Rhys"){
+        message.reply("Rhys te rend le câlin gêné. Il n'a pas l'air de savoir te dire non.");
+    console.log('Le bot fait un câlin.');
+  }
+  
+  if (message.content === "/Câlin Lou"){
+        message.reply("Lou te repousse en rougissant ;///;");
+    console.log('Le bot fait un câlin.');
+  }
+    
   if (message.content === "Mochizuki-sama, que savez-vous sur les OCs ?"){
    random();
    
