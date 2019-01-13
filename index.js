@@ -131,13 +131,5 @@ if (message.content === "/Thé"){
    message.reply("It's Tea Time ! ");
         console.log('Le bot sert le thé');
 }
-    
-    client.on("guildMemberAdd", member => {
-    member.guild.channels.find("name", "général").send(`Un nouvel arrivant est sorti des Abyss ! Prends une tasse de thé ${member} et quelques biscuits !`)
-})
-
-client.on("guildMemberRemove", member => {
-    member.guild.channels.find("name", "général").send(`${member} a fini son contract illégal et est reparti dans les Abyss !`)
-})
 
 });
