@@ -9,7 +9,7 @@ client.login(process.env.TOKEN);
 
 client.on("ready", () => {
     console.log("Je suis prêt !")
-    client.user.setGame("dessiner des mangas", "prendre le thé")
+    client.user.setGame("rêver de Paris.")
 });
 
 client.on('message', message => {
