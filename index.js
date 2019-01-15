@@ -20,6 +20,7 @@ client.on('message', message => {
         .setTitle("Voici mes commandes d'aide")
         .setDescription("Je suis Mochizuki-Sama, votre Bot !")
         .addField("/Aide", "Affiche mes commandes")
+        .addField("/Gâteau", "J'annonce votre venue en grande pompe !")
         .addField("/Bonjour", "Je vous réponds !")
         .addField("/Chat", "Je vous réponds !")
         .addField("/Amour", "Je vous réponds !")
@@ -49,6 +50,11 @@ client.on('message', message => {
 
     if (message.content === "/Bonjour"){
         message.reply("Bonjour !");
+    console.log('Le bot dit bonjour');
+  }
+    
+    if (message.content === "/Hey !"){
+        message.reply("arrive dans un magnifique spectacle son et lumières qui se finit sur un énorme feu d'artifice !!");
     console.log('Le bot dit bonjour');
   }
       
