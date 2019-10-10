@@ -67,6 +67,11 @@ client.on('message', message => {
         message.reply("Oups, Andrew a encore oublié un dossier important :facepalm:");
     console.log('Le bot perd un dossier');
   }
+    
+  if (message.content === "*roule*"){
+        message.reply({files: ["./images/Roule.gif"]});
+    console.log('Le bot roule.');
+  }
   
   if (message.content === "/Câlin Athanase"){
         message.reply("Athanase te demande ce que tu fous. Il n'a pas l'air d'apprécier ton câlin...");
