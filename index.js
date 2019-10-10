@@ -138,7 +138,7 @@ client.on('message', message => {
     console.log('Le bot fait un câlin.');
   }
     
-  if (message.content.startsWith ("*roule*)) {
+  if (message.content === "*roule*"){
         message.channel.send ({files: ["./images/Roule.gif]});
     console.log('Le bot roule.');
   }
