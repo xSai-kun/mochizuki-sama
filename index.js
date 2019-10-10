@@ -220,7 +220,7 @@ if (message.content === "/Lacie"){
 }
 
 if (message.content === "/Han"){
-    message.reply("https://pm1.narvii.com/6174/95beca04c73ceb8f13ca855db56e70a75c436621_hq.jpg");
+    message.reply({files: ["./images/Han.jpg"]});
         console.log('Le bot traumatise tout le monde');
 }
     
