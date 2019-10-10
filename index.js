@@ -138,11 +138,6 @@ client.on('message', message => {
     console.log('Le bot fait un câlin.');
   }
     
-  if (message.content === "*roule*"){
-        message.channel.send ({files: ["./images/Roule.gif]});
-    console.log('Le bot roule.');
-  }
-    
   if (message.content === "Mochizuki-sama, que savez-vous sur les OCs ?"){
    random();
    
