@@ -138,6 +138,11 @@ client.on('message', message => {
     console.log('Le bot fait un câlin.');
   }
     
+  if (message.content === "*roule*"){
+        message.reply("https://cdn.discordapp.com/attachments/326656412392620034/631850160581771264/oz_roule.gif");
+    console.log('Le bot fait un câlin.');
+  }
+    
   if (message.content === "Mochizuki-sama, que savez-vous sur les OCs ?"){
    random();
    
