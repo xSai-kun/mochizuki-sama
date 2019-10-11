@@ -28,8 +28,6 @@ client.on('message', message => {
         .addField("/Peluche", "Je vous réponds !")
         .addField("/Thé", "Je vous réponds !")
         .addField("/Lacie", "Je vous réponds !")
-        .addField("Buh", "Je réagis !")
-        .addField("*roule*", "Je réagis !")
         .addField("/Caramel", "Je vous réponds !")
         .addField("/Indécent", "Je vous réponds !")
         .addField("/Break", "Je vous réponds !")
