@@ -73,6 +73,16 @@ client.on('message', message => {
     console.log('Le bot roule.');
   }
   
+  if (message.content === "Buh"){
+        message.reply({files: ["./images/Buh.gif"]});
+    console.log('Le bot déprime.');
+  }
+    
+  if (message.content === "/Amour"){
+        message.reply("Miss Sharon devient fleur bleue ! :han: :han: " {files: ["./images/Roule.gif"]});
+    console.log('Le bot devient fleur bleu.');
+  }
+    
   if (message.content === "/Câlin Athanase"){
         message.reply("Athanase te demande ce que tu fous. Il n'a pas l'air d'apprécier ton câlin...");
     console.log('Le bot fait un câlin.');
