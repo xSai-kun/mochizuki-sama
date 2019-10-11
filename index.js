@@ -79,7 +79,7 @@ client.on('message', message => {
   }
     
   if (message.content === "/Amour"){
-        message.reply("Miss Sharon devient fleur bleue ! :han: :han: " {files: ["./images/Roule.gif"]});
+        message.reply("Miss Sharon devient fleur bleue ! :han: :han: ", {files: ["./images/Amour.gif"]});
     console.log('Le bot devient fleur bleu.');
   }
     
