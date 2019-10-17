@@ -72,13 +72,6 @@ client.on('message', message => {
         message.reply({files: ["./images/Roule.gif"]});
     console.log('Le bot roule.');
   }
-
-  if (message.content === ('+buh'){
-        message.reply({files: ["./images/Buh.gif"]});
-    console.log('Le bot déprime.');
-  }
-
-
   
   if (message.content === "Buh"){
         message.reply({files: ["./images/Buh.gif"]});
