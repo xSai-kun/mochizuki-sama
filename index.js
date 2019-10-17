@@ -72,6 +72,16 @@ client.on('message', message => {
         message.reply({files: ["./images/Roule.gif"]});
     console.log('Le bot roule.');
   }
+    
+  if (message.content === "MDR"){
+        message.reply({files: ["./images/Malicerit.gif"]});
+    console.log('Le bot rit.');
+  }
+    
+  if (message.content === "Oups"){
+        message.reply({files: ["./images/Andrew.png"]});
+    console.log('Le bot a fait une bêtise.');
+  }
   
   if (message.content === "Buh"){
         message.reply({files: ["./images/Buh.gif"]});
