@@ -20,7 +20,7 @@ client.on('message', message => {
         .setTitle("Voici mes commandes d'aide")
         .setDescription("Je suis Mochizuki-Sama, votre Bot !")
         .addField("/Aide", "Affiche mes commandes")
-        .addField("/Gâteau", "J'annonce votre venue en grande pompe !")
+        .addField("/Hey", "J'annonce votre venue en grande pompe !")
         .addField("/Bonjour", "Je vous réponds !")
         .addField("/Chat", "Je vous réponds !")
         .addField("/Amour", "Je vous réponds !")
@@ -72,6 +72,13 @@ client.on('message', message => {
         message.reply({files: ["./images/Roule.gif"]});
     console.log('Le bot roule.');
   }
+
+  if (message.content === ('+buh'){
+        message.reply({files: ["./images/Buh.gif"]});
+    console.log('Le bot déprime.');
+  }
+
+
   
   if (message.content === "Buh"){
         message.reply({files: ["./images/Buh.gif"]});
